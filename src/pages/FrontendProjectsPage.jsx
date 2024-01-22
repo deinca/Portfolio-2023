@@ -156,7 +156,7 @@ function FrontEndProjectsPage() {
             description={
               "Voor dit (klein) project heb ik gebruik gemaakt van de React JavaScript-library en twee databases API voor om de cover van boeken (google API) en films (OMDb API) weer te geven in mijn portfolio."
             }
-            url={"https://github.com/deinca/vue-gpg-app/blob/main/src/App.vue"}
+            url={"https://github.com/deinca/Portfolio-2023"}
             imgSrc={portfolio}
           />
         </div>

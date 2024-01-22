@@ -18,10 +18,10 @@ import { useEffect, useState } from "react";
 import animations from "../animation-functions";
 
 // Films API URL
-const API_URL = "https://www.omdbapi.com?apikey= YOURKEY WITHOUT SPACES";
+const API_URL = "https://www.omdbapi.com?apikey=6cfc284";
 
 function AboutMe() {
-  //animations functions 
+  //animations functions
   animations();
 
   // State movies
@@ -63,26 +63,35 @@ function AboutMe() {
 
   //
   const [books, setBooks] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   // Api movies searcher
   const searchBooks = async (titles) => {
     const fetchedBooks = [];
     for (const title of titles) {
-      const response = await fetch(
-        `${
-          "https://www.googleapis.com/books/v1/volumes?q=" +
-          title +
-          "&key= YOURKEY WITHOUT SPACES"
-        }`
-      );
-      const data = await response.json();
-      // console.log(data.items[0].volumeInfo)
+      try {
+        const response = await fetch(
+          `https://www.googleapis.com/books/v1/volumes?q=${title}&key=AIzaSyD2IsyW7RWy3QaKL4DgU1zP3NxpxqchCrU`
+        );
 
-      if (data && data.items.length > 0) {
-        fetchedBooks.push(data.items[0].volumeInfo);
+        if (!response.ok) {
+          throw new Error(
+            `Fout bij het ophalen van boekgegevens voor ${title}`
+          );
+        }
+
+        const data = await response.json();
+
+        if (data && data.items && data.items.length > 0) {
+          fetchedBooks.push(data.items[0].volumeInfo);
+        }
+      } catch (error) {
+        console.error(error.message);
       }
     }
     setBooks(fetchedBooks);
+    setIsLoading(false);
   };
+
   // React hook
   useEffect(() => {
     const bookTitles = [
@@ -90,19 +99,27 @@ function AboutMe() {
       "Big Nine",
       "Design and Build Websites",
       "Interactive Front-End Web Development",
-      "Microinteractions: Full Color Edition",
       "Eloquent JavaScript",
       "Rich dad poor dad",
       "Ik werk voor mezelf",
       "7 Habits of Leadership",
       "Data Visualisation A Handbook for Data Driven Design",
     ];
+
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        await searchBooks(bookTitles);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
     setTimeout(() => {
-      searchBooks(bookTitles);
+      fetchData();
     }, 500);
   }, []);
-  // console.log(books);
-  
+  console.log(books);
 
   return (
     <main>
@@ -155,21 +172,29 @@ function AboutMe() {
             ik als beschouw aanrader.
           </p>
 
-          <div className="flex flex-space-between flex-wrap width-100-pro show-element">
-            {books.map((book) => (
-              <BookCard
-                book={book}
-                key={book.industryIdentifiers[0].identifier}
-              />
-            ))}
-          </div>
+          {isLoading ? (
+            <p className="show-element">Loading...</p>
+          ) : books.length > 0 ? (
+            <div className="flex flex-space-between flex-wrap width-100-pro">
+              {books.map((book) => (
+                <BookCard
+                  book={book}
+                  key={book.industryIdentifiers[0].identifier}
+                />
+              ))}
+            </div>
+          ) : (
+            <p>Geen boeken gevonden.</p>
+          )}
         </div>
       </section>
       <div className="section-separetor"></div>
 
       <section className="big-section move-section">
         <div className="flex flex-col-center text-center">
-          <h2 className="gradient-heading-yb width-50-pro show-element">Favoriete films</h2>
+          <h2 className="gradient-heading-yb width-50-pro show-element">
+            Favoriete films
+          </h2>
           <p className="big-text width-50-pro show-element">
             Hieronder vind je ook een lijst van de films die ik heb gezien en
             die ik als beschouw aanrader.
@@ -185,7 +210,9 @@ function AboutMe() {
 
       <section className="padding-4rem-tb move-section">
         <div className="flex flex-col-center text-center">
-          <h2 className="gradient-heading-yb width-50-pro show-element">Samenwerken?</h2>
+          <h2 className="gradient-heading-yb width-50-pro show-element">
+            Samenwerken?
+          </h2>
           <p className="big-text width-50-pro show-element">
             Dit komt goed uit. Op dit moment ben ik op zoek naar een bedrijf met
             creatieve designers en geweldige developers. Als u denkt dat we
@@ -196,7 +223,10 @@ function AboutMe() {
       </section>
       <div className="section-separetor"></div>
 
-      <section id="contact" className="contact-section flex flex-space-between move-section">
+      <section
+        id="contact"
+        className="contact-section flex flex-space-between move-section"
+      >
         <div className="width-45-pro">
           <h2 className="gradient-heading-yb show-element">Netwerken?</h2>
           <p className="big-text show-element">
