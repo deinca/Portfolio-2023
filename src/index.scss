@@ -452,6 +452,8 @@ section {
     background-size: cover;
     position: absolute;
     bottom: -8rem;
+    height: inherit;
+    object-fit: contain;
   }
 }
 
