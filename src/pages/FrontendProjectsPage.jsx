@@ -42,7 +42,7 @@ function FrontEndProjectsPage() {
         <div className="flex flex-space-between to-top">
           <ProjectBlock
             name={"DZMEDIA"}
-            tags={"Wordpres - UX/UI - HTML - CSS - JS(GSAP)"}
+            tags={"WordPress - UX/UI - HTML - CSS - JS(GSAP)"}
             description={
               "In 2023 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. Binnen dit project heb ik ook JavaScript gebruikt om animaties te maken."
             }
@@ -64,7 +64,7 @@ function FrontEndProjectsPage() {
         <div className="flex flex-space-between to-top">
           <ProjectBlock
             name={"DJ LatingoBoy"}
-            tags={"Wordpres - HTML - CSS - PHP"}
+            tags={"WordPress - HTML - CSS - PHP"}
             description={
               "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. "
             }
