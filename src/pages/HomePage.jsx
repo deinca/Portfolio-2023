@@ -198,7 +198,7 @@ function Homepage() {
         <div className="flex flex-space-between move-section">
           <article className="project-card-block show-element">
             <h3 className="gradient-heading-yb">DZMEDIA</h3>
-            <p>Wordpres - UX/UI - HTML - CSS - JS(GSAP) - Lottie</p>
+            <p>WordPress - UX/UI - HTML - CSS - JS(GSAP) - Lottie</p>
             <div className="section-separetor"></div>
             <div className="project-details">
               <p>
