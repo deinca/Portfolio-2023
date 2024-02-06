@@ -31,7 +31,7 @@ function Nav({ isOpen, closeNav }) {
           </a>
         </li>
         <li>
-          <a className="circle-btn" href="tel:0611838539">
+          <a className="circle-btn" href="tel:0640851029">
             <img src={phoneIcon} alt="Mail icon" />
             <span className="disapear">Bel</span>
           </a>
