@@ -98,7 +98,7 @@ function AboutMe() {
       "how to win friends",
       "Big Nine",
       "Design and Build Websites",
-      "Interactive Front-End Web Development",
+      "JavaScript and jQuery: Interactive Front-End Web Development",
       "Eloquent JavaScript",
       "Rich dad poor dad",
       "Ik werk voor mezelf",

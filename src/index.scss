@@ -531,6 +531,30 @@ p a {
 .disapear {
   display: none;
 }
+.ul-links{
+  padding: 0;
+  li{
+    color: #ffd156;
+    &:hover{
+      color: #ffd156;
+    }
+    a{
+      color: #e7e7e7;
+
+      &:hover{
+        color: #ffd156;
+      }
+      
+      &:visited{
+        color: #e7e7e7;
+      }
+
+      &:visited:hover{
+        color: #ffd156;
+      }
+    }
+  }
+}
 
 /* Circle button  */
 .circle-btn {
@@ -1209,3 +1233,4 @@ footer {
     justify-content: center;
   }
 }
+

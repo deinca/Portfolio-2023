@@ -4,6 +4,7 @@ import Homepage from "./pages/HomePage";
 import FrontendProjectsPage from "./pages/FrontendProjectsPage";
 import MultimediaProjectsPage from "./pages/MultimediaProjectsPage";
 import AboutMePage from "./pages/AboutMePage";
+import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,8 +14,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/front-end-projecten" element={<FrontendProjectsPage />} />
-        <Route path="/multimedia-projecten" element={<MultimediaProjectsPage />} />
+        <Route
+          path="/multimedia-projecten"
+          element={<MultimediaProjectsPage />}
+        />
         <Route path="/meer-over-mij" element={<AboutMePage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

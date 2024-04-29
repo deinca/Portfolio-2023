@@ -4,25 +4,33 @@ import phoneIcon from "../assets/icons/call-icon.svg";
 import React from "react";
 
 function Nav({ isOpen, closeNav }) {
-
-
   return (
     <nav className={`main-navigation ${isOpen ? "open" : ""}`}>
       <ul>
         <li>
-          <Link to="/" onClick={closeNav}>Homepage</Link>
+          <Link to="/" onClick={closeNav}>
+            Homepage
+          </Link>
         </li>
         <li>
-          <Link to="/front-end-projecten" onClick={closeNav}>Front-end Projecten</Link>
+          <Link to="/front-end-projecten" onClick={closeNav}>
+            Front-end Projecten
+          </Link>
         </li>
         <li>
-          <Link to="/multimedia-projecten" onClick={closeNav}>Multimedia Projecten</Link>
+          <Link to="/multimedia-projecten" onClick={closeNav}>
+            Multimedia Projecten
+          </Link>
         </li>
         <li>
-          <Link to="/meer-over-mij" onClick={closeNav}>Meer over mij</Link>
+          <Link to="/meer-over-mij" onClick={closeNav}>
+            Meer over mij
+          </Link>
         </li>
         <li>
-          <a href="#contact" onClick={closeNav}>Contact</a>
+          <a href="#contact" onClick={closeNav}>
+            Contact
+          </a>
         </li>
         <li>
           <a className="circle-btn" href="mailto:deiverzc@gmail.com">
