@@ -32,7 +32,7 @@ function Homepage() {
 
   return (
     <main>
-      <section className="intro-home flex flex-center">
+      <section className="intro-home flex flex-center" id="firstSection">
         <div className="width-50-pro">
           <h1 className="gradient-heading-yb to-top">Welkom bij mijn portfolio</h1>
           <p className="big-text to-top">

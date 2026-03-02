@@ -26,7 +26,7 @@ function MultiMediaProjectsPage() {
 
   return (
     <main>
-      <section id="section-one" className="intro-content-block ">
+      <section id="firstSection" className="intro-content-block ">
         <div className="padding-4rem-tb flex flex-col-center">
           <h1 className="gradient-heading-yb width-50-pro text-center to-top">
             Multimedia projecten

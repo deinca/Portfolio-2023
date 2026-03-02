@@ -18,7 +18,7 @@ function NotFound() {
 
   return (
     <main>
-      <section className="big-section 404-page move-section">
+      <section className="big-section 404-page move-section" id="firstSection">
         <div className="flex flex-col-center">
           <h1 className="gradient-heading-yb width-50-pro text-center to-top">
             Volgens mij ben je de weg kwijt geraakt

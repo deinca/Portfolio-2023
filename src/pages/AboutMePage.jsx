@@ -123,7 +123,7 @@ function AboutMe() {
 
   return (
     <main>
-      <section className="big-section about-me flex move-section flex-space-between flex-center">
+      <section className="big-section about-me flex move-section flex-space-between flex-center" id="firstSection">
         <div className="layer-2 width-50-pro">
           <h1 className="gradient-heading-yb to-top">Wie ben ik</h1>
           <p className="width-90-pro to-top">

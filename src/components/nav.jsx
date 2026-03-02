@@ -1,31 +1,32 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import mailIcon from "../assets/icons/mail-icon.svg";
 import phoneIcon from "../assets/icons/call-icon.svg";
 import React from "react";
+
 
 function Nav({ isOpen, closeNav }) {
   return (
     <nav className={`main-navigation ${isOpen ? "open" : ""}`}>
       <ul>
         <li>
-          <Link to="/" onClick={closeNav}>
+          <HashLink smooth to="/#firstSection" onClick={closeNav}>
             Homepage
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link to="/front-end-projecten" onClick={closeNav}>
+          <HashLink smooth to="/front-end-projecten#firstSection" onClick={closeNav}>
             Front-end Projecten
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link to="/multimedia-projecten" onClick={closeNav}>
+          <HashLink smooth to="/multimedia-projecten#firstSection" onClick={closeNav}>
             Multimedia Projecten
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link to="/meer-over-mij" onClick={closeNav}>
+          <HashLink smooth to="/meer-over-mij#firstSection" onClick={closeNav}>
             Meer over mij
-          </Link>
+          </HashLink>
         </li>
         <li>
           <a href="#contact" onClick={closeNav}>
