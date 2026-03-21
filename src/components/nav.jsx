@@ -19,6 +19,11 @@ function Nav({ isOpen, closeNav }) {
           </HashLink>
         </li>
         <li>
+          <HashLink smooth to="/wordpress#firstSection" onClick={closeNav}>
+              WordPress
+          </HashLink>
+        </li>
+        <li>
           <HashLink smooth to="/multimedia-projecten#firstSection" onClick={closeNav}>
             Multimedia Projecten
           </HashLink>

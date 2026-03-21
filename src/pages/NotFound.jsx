@@ -18,7 +18,7 @@ function NotFound() {
 
   return (
     <main>
-      <section className="big-section 404-page move-section" id="firstSection">
+      <section className="big-section 404-page move-section">
         <div className="flex flex-col-center">
           <h1 className="gradient-heading-yb width-50-pro text-center to-top">
             Volgens mij ben je de weg kwijt geraakt
@@ -30,6 +30,9 @@ function NotFound() {
             </li>
             <li>
               <Link to="/front-end-projecten">Front-end projecten</Link>
+            </li>
+            <li>
+              <Link to="/wordpress">Wordpress</Link>
             </li>
             <li>
               <Link to="/multimedia-projecten">Multimedia projecten</Link>

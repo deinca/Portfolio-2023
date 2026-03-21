@@ -2,6 +2,7 @@ import Header from "./template/header";
 import Footer from "./template/footer";
 import Homepage from "./pages/HomePage";
 import FrontendProjectsPage from "./pages/FrontendProjectsPage";
+import WordPressPage from "./pages/WordPress";
 import MultimediaProjectsPage from "./pages/MultimediaProjectsPage";
 import AboutMePage from "./pages/AboutMePage";
 import NotFound from "./pages/NotFound";
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/front-end-projecten" element={<FrontendProjectsPage />} />
+        <Route path="/wordpress" element={<WordPressPage />} />
         <Route
           path="/multimedia-projecten"
           element={<MultimediaProjectsPage />}

@@ -1,13 +1,33 @@
 import React from "react";
 
 function BookCard({ book }) {
+
+  const isbn = book?.industryIdentifiers?.[0]?.identifier ||
+  book?.canonicalVolumeLink ||
+  book?.title ||
+  "unknow-book";
+
+  const authors = Array.isArray(book?.authors)
+  ? book.authors.join(", ")
+  : book?.authors || "Onbekende auteur";
+
+  const thumbnail = book?.imageLinks?.thumbnail.replace("http://", "https://");
+
   return (
-    <article className="card-block book" id={book.industryIdentifiers[0].identifier}>
-      <h3 className="gradient-heading-yb">{book.title}</h3>
+    <article className="card-block book" id={isbn}>
+      <h3 className="gradient-heading-yb">{book?.title ?? "Onbekende titel"}</h3>
       <div className="section-separetor"></div>
-      <p>{book.authors}</p>
-      <img src={book.imageLinks.thumbnail} alt={book.Title} />
-      <a className="pr-button" href={book.canonicalVolumeLink} target="_blank">Meer info</a>
+      <p>{authors}</p>
+
+      {thumbnail ? 
+      (<img src={thumbnail} alt={book?.Title} loading="lazy" /> )
+      : ( <p>Geen cover beschikbaar</p>)
+      }
+
+      { book?.canonicalVolumeLink && (
+        <a className="pr-button" href={book.canonicalVolumeLink} target="_blank" rel="noreferrer">Meer info</a>
+      )}
+      
     </article>
   );
 }

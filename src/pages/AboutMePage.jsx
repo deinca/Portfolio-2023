@@ -70,12 +70,12 @@ function AboutMe() {
     for (const title of titles) {
       try {
         const response = await fetch(
-          `https://www.googleapis.com/books/v1/volumes?q=${title}&key=AIzaSyD2IsyW7RWy3QaKL4DgU1zP3NxpxqchCrU`
+          `https://www.googleapis.com/books/v1/volumes?q=${title}&key=AIzaSyD2IsyW7RWy3QaKL4DgU1zP3NxpxqchCrU`,
         );
 
         if (!response.ok) {
           throw new Error(
-            `Fout bij het ophalen van boekgegevens voor ${title}`
+            `Fout bij het ophalen van boekgegevens voor ${title}`,
           );
         }
 
@@ -96,13 +96,13 @@ function AboutMe() {
   useEffect(() => {
     const bookTitles = [
       "how to win friends",
-      "Big Nine",
+      "How the Tech Titans and Their Thinking Machines Could Warp Humanity",
       "Design and Build Websites",
       "JavaScript and jQuery: Interactive Front-End Web Development",
       "Eloquent JavaScript",
       "Rich dad poor dad",
-      "Ik werk voor mezelf",
-      "7 Habits of Leadership",
+      "Omringd door idioten",
+      "The 7 Habits of Highly Effective People",
       "Data Visualisation A Handbook for Data Driven Design",
     ];
 
@@ -123,7 +123,11 @@ function AboutMe() {
 
   return (
     <main>
-      <section className="big-section about-me flex move-section flex-space-between flex-center" id="firstSection">
+      <section
+        className="big-section about-me flex move-section flex-center"
+        id="firstSection"
+      >
+        <div className="flex wrap inner-section">
         <div className="layer-2 width-50-pro">
           <h1 className="gradient-heading-yb to-top">Wie ben ik</h1>
           <p className="width-90-pro to-top">
@@ -151,13 +155,14 @@ function AboutMe() {
           </div>
 
           <ul className="width-30-pro about-me-list">
-            <li className="stager-move-to-left">Betrouwbaar</li>
-            <li className="stager-move-to-left">Empatisch</li>
-            <li className="stager-move-to-left">Kritisch</li>
-            <li className="stager-move-to-left">Doelgericht</li>
-            <li className="stager-move-to-left">Ambitieus</li>
-            <li className="stager-move-to-left">Doorzetter</li>
+            <li className="to-top">Betrouwbaar</li>
+            <li className="to-top">Empatisch</li>
+            <li className="to-top">Kritisch</li>
+            <li className="to-top">Doelgericht</li>
+            <li className="to-top">Ambitieus</li>
+            <li className="to-top">Doorzetter</li>
           </ul>
+        </div>
         </div>
       </section>
       <div className="section-separetor"></div>
@@ -175,13 +180,19 @@ function AboutMe() {
           {isLoading ? (
             <p className="show-element">Loading...</p>
           ) : books.length > 0 ? (
-            <div className="flex flex-space-between flex-wrap width-100-pro">
+            <div className="flex flex-center width-100-pro">
+              <div className="flex wrap inner-section flex-space-between flex-wrap">
               {books.map((book) => (
                 <BookCard
                   book={book}
-                  key={book.industryIdentifiers[0].identifier}
+                  key={
+                    book?.industryIdentifiers?.[0]?.identifier ||
+                    book?.canonicalVolumeLink ||
+                    book?.title
+                  }
                 />
               ))}
+            </div>
             </div>
           ) : (
             <p>Geen boeken gevonden.</p>
@@ -199,11 +210,13 @@ function AboutMe() {
             Hieronder vind je ook een lijst van de films die ik heb gezien en
             die ik als beschouw aanrader.
           </p>
-          <div className="flex flex-space-between flex-wrap show-element">
+          <div className="flex flex-center show-element">
+            <div className="flex wrap inner-section flex-space-between flex-wrap">
             {movies.map((movie) => (
               <MovieBookCard movie={movie} key={movie.imdbID} />
             ))}
           </div>
+        </div>
         </div>
       </section>
       <div className="section-separetor"></div>
@@ -223,48 +236,50 @@ function AboutMe() {
       </section>
       <div className="section-separetor"></div>
 
-      <section
+ <section
         id="contact"
-        className="contact-section flex flex-space-between move-section"
+        className="contact-section flex flex-center  move-section"
       >
-        <div className="width-45-pro">
-          <h2 className="gradient-heading-yb show-element">Netwerken?</h2>
-          <p className="big-text show-element">
-            Wij kunnen altijd elkaar digitaal ontmoeten door mij te volgen in de
-            onderstaande social media. Voor direct contact kunt u het volgende
-            fomulier invullen.
-          </p>
-          <div className="width-50-pro flex flex-space-between sm-buttons">
-            <a
-              target="_blank"
-              className="circle-btn show-element"
-              href="https://nl.linkedin.com/in/deiver-zamora-cortez-378405110?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
-            >
-              <img src={linkedInIcon} alt="LinkedIn icon" />
-              <span className="disapear">LinkedIn</span>
-            </a>
-            <a
-              target="_blank"
-              className="circle-btn show-element"
-              href="https://github.com/deinca"
-            >
-              <img src={githubIcon} alt="" />
-              <span className="disapear">Github</span>
-            </a>
-            <a
-              target="_blank"
-              className="circle-btn show-element"
-              href="https://www.instagram.com/dzmedia.nl/"
-            >
-              <img src={insIcon} alt="Instragram icon" />
-              <span className="disapear">Instagram</span>
-            </a>
+        <div className="flex wrap flex-space-between">
+          <div className="width-45-pro">
+            <h2 className="gradient-heading-yb show-element">Netwerken?</h2>
+            <p className="big-text show-element">
+              Wij kunnen altijd elkaar digitaal ontmoeten door mij te volgen in
+              de onderstaande social media. Voor direct contact kunt u het
+              volgende fomulier invullen.
+            </p>
+            <div className="width-50-pro flex flex-space-between sm-buttons">
+              <a
+                target="_blank"
+                className="circle-btn show-element"
+                href="https://nl.linkedin.com/in/deiver-zamora-cortez-378405110?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
+              >
+                <img src={linkedInIcon} alt="LinkedIn icon" />
+                <span className="disapear">LinkedIn</span>
+              </a>
+              <a
+                target="_blank"
+                className="circle-btn show-element"
+                href="https://github.com/deinca"
+              >
+                <img src={githubIcon} alt="" />
+                <span className="disapear">Github</span>
+              </a>
+              <a
+                target="_blank"
+                className="circle-btn show-element"
+                href="https://www.instagram.com/dzmedia.nl/"
+              >
+                <img src={insIcon} alt="Instragram icon" />
+                <span className="disapear">Instagram</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="width-45-pro">
-          <article className="card-block show-element">
-            <Contactform />
-          </article>
+          <div className="width-45-pro">
+            <article className="card-block show-element">
+              <Contactform />
+            </article>
+          </div>
         </div>
       </section>
     </main>
