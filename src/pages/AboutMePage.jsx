@@ -51,10 +51,15 @@ function AboutMe() {
       "stand and deliver",
       "No way home",
       "i origins",
-      "Bound by Honor",
+      "Blood In, Blood Out",
       "Gladiator",
       "Truman",
       "Bruce almighty",
+      "Eternal Sunshine of the Spotless Mind",
+      "The Great Flood",
+      "Green Book",
+      "Forrest Gump",
+      "Avengers: Endgame",
     ];
     setTimeout(() => {
       searchMovies(movieTitles);

@@ -70,12 +70,12 @@ function MultiMediaProjectsPage() {
             />
 
             <ProjectBlock
-              name={"OBA Bibliotheek App"}
-              tags={"UX/UI - Marvel app"}
+              name={"The Game Changer"}
+              tags={"UX/UI - Wordpress website - Product development"}
               description={
                 "Voor het vak Visual Interactief Design heb ik een prototype-app gemaakt voor de OBA-bibliotheek in Amsterdam. De doelgroep van deze opdracht waren kinderen van 10 jaar tot en met 14 jaar. De gebruiker moest door middel van deze app zijn boek kunnen reserveren, zien of het boek geleend kon worden en of die beschadigd was. Deze prototype wordt voorzien van geïnnoveerde en interactieve schermen."
               }
-              url={"https://marvelapp.com/prototype/4362840/screen/40247537"}
+              url={"https://cmd-amsterdam.nl/portfolio/the-game-changer/"}
               imgSrc={obaOpdrachten}
             />
 
@@ -91,7 +91,7 @@ function MultiMediaProjectsPage() {
 
             <ProjectBlock
               name={"SEIN"}
-              tags={"Adobe after effects"}
+              tags={"Figma - Protopy - UX/UI aftudeerproject"}
               description={
                 "Tijdens mijn HBO afstudeerperiode ben ik bezig geweest met het maken van instructievideo's voor mijn eindproduct. Deze video's heb ik gemaakt met het Adobe-programma After Effects. Door op de link te klikken krijg je een voorbeeld te zien."
               }

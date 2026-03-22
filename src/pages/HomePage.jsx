@@ -48,10 +48,13 @@ function Homepage() {
               <a href="#section-2" className="sc-button">
                 Meer info
               </a>
-              <HashLink smooth to="/front-end-projecten#firstSection" className="pr-button">
+              <HashLink
+                smooth
+                to="/front-end-projecten#firstSection"
+                className="pr-button"
+              >
                 Projecten
               </HashLink>
-              
             </div>
           </div>
           <div className="width-50-pro home-images">
@@ -74,24 +77,31 @@ function Homepage() {
         className="big-section flex flex-center move-section"
       >
         <div className="flex  wrap inner-section">
-          <div className="width-50-pro">
+          <div className="width-50-pro auto-m-ud flex flex-col">
             <h2 className="gradient-heading-yb show-element">
               Meer dan 3 jaar ervaring
             </h2>
-            <p className="big-text show-element">
-              Als front-end developer heb ik ervaring opgedaan in HTML, CSS en
-              JavaScript. Met deze talen kan ik verschillende projecten maken.
+            <p className="mid-text show-element">
+              Als front-end developer heb ik de afgelopen jaren ervaring
+              opgebouwd met HTML, CSS en JavaScript. Met deze technieken
+              ontwikkel ik moderne en responsive interfaces, waarbij ik let op
+              structuur, gebruiksvriendelijkheid en een verzorgde uitwerking van
+              design naar een werkende website.
             </p>
             <div className="two-buttons width-100-pro">
               <a href="#contact" className="sc-button">
                 Contact
               </a>
-              <HashLink smooth to="/front-end-projecten#firstSection" className="pr-button">
+              <HashLink
+                smooth
+                to="/front-end-projecten#firstSection"
+                className="pr-button"
+              >
                 Projecten
               </HashLink>
             </div>
           </div>
-          <div className="width-50-pro flex flex-wrap flex-space-evenly">
+          <div className="width-50-pro flex flex-wrap flex-space-evenly flex-center">
             <article className="card-block width-33-pro show-element">
               <div className="circle-btn">
                 <img src={htmlIcon} alt="" />
@@ -122,7 +132,7 @@ function Homepage() {
                 <li>Vue</li>
                 <li>Node.js</li>
                 <li>GSAP</li>
-                <li>SASS</li>
+                <li>SCSS</li>
                 <li>NPM</li>
               </ul>
             </article>
@@ -133,8 +143,8 @@ function Homepage() {
               <h3 className="text-lc">Tools</h3>
               <ul className="checked-list flex flex-col">
                 <li>VS Code</li>
-                <li>Dreamweaver</li>
-                <li>Brackets</li>
+                <li>Figma</li>
+                <li>Adobe</li>
                 <li>Terminal Bash</li>
               </ul>
             </article>
@@ -145,25 +155,32 @@ function Homepage() {
 
       <section className="big-section flex flex-center flex-row-reverse move-section">
         <div className="flex wrap inner-section">
-          <div className="width-50-pro">
+          <div className="width-50-pro auto-m-ud flex flex-col">
             <h2 className="gradient-heading-yb show-element">
-              Werkflow ervaring
+              Workflow & Tools
             </h2>
-            <p className="big-text show-element">
-              Ik heb de mogelijkheid gehad om te werken in een
-              multidisciplinaire omgeving. Hierdoor ben ik bekend met de agile
-              werkwijze en met versiebeheersystemen.
+            <p className="mid-text show-element">
+              Binnen mijn workflow ben ik bekend met agile werkwijzen,
+              versiebeheer en development tools. Ik werk graag gestructureerd en
+              heb ervaring binnen een multidisciplinaire omgevingen. Daarnaast
+              gebruik ik AI (ChatGPT) als ondersteunende tool om sneller te
+              itereren, teksten te verfijnen en efficiënter tot oplossingen te
+              komen.
             </p>
             <div className="two-buttons width-100-pro">
               <a href="#contact" className="sc-button">
                 Contact
               </a>
-              <HashLink smooth to="/front-end-projecten#firstSection" className="pr-button">
+              <HashLink
+                smooth
+                to="/front-end-projecten#firstSection"
+                className="pr-button"
+              >
                 Projecten
               </HashLink>
             </div>
           </div>
-          <div className="width-50-pro flex flex-wrap flex-space-evenly">
+          <div className="width-50-pro flex flex-wrap flex-space-evenly flex-center">
             <article className="card-block width-33-pro show-element">
               <div className="circle-btn">
                 <img src={gitIcon} alt="" />
@@ -267,10 +284,13 @@ function Homepage() {
         </div>
 
         <div className="flex flex-col-center text-center padding-2rem">
-
-                        <HashLink smooth to="/front-end-projecten#firstSection" className="pr-button">
-                Meer projecten bekijken
-              </HashLink>
+          <HashLink
+            smooth
+            to="/front-end-projecten#firstSection"
+            className="pr-button"
+          >
+            Meer projecten bekijken
+          </HashLink>
         </div>
       </section>
       <div className="section-separetor"></div>

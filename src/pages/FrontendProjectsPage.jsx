@@ -19,6 +19,9 @@ import wowAir from "../assets/images/wow-air.png";
 import showCase from "../assets/images/showcase-internship.png";
 import vueGames from "../assets/images/vue-games.png";
 import portfolio from "../assets/images/portfolio-2023.png";
+import ghsImg from "../assets/images/ghs.jpg";
+import lyImg from "../assets/images/ly.jpg";
+import merImg from "../assets/images/mercury.jpg";
 
 //Animations
 import animations from "../animation-functions";
@@ -34,61 +37,86 @@ function FrontEndProjectsPage() {
           <h1 className="gradient-heading-yb width-50-pro text-center to-top">
             Front-end projecten
           </h1>
-          <p className="big-text width-50-pro text-center to-top">
-            Hieronder kun je mijn front-end projecten bekijken.
+          <p className="big-text width-70-pro text-center to-top">
+            Hieronder kun je mijn front-end projecten bekijken. Binnen deze projecten ben ik meer technisch geweest door de websites met custom code te bouwen of applicaties te bouwen met JavaScript framesworks.
           </p>
         </div>
 
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
+        <div className="flex flex-center to-top">
+          <div className="wrap flex flex-wrap flex-space-between">
+
             <ProjectBlock
-              name={"DZMEDIA"}
-              tags={"WordPress - UX/UI - HTML - CSS - JS(GSAP)"}
+              name={"Portfolio"}
+              tags={"React framework - HTML - CSS - JavaScript - Vite - API's - GSAP- NPM"}
               description={
-                "In 2023 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. Binnen dit project heb ik ook JavaScript gebruikt om animaties te maken."
+                "Voor dit (klein) project heb ik gebruik gemaakt van de framework React. Daarnaast heb ik JavaScript-libraries en twee databases API's gebruikt voor om de covers van boeken (google API) en films (OMDb API) weer te geven in mijn portfolio. Dit ka nje zien in de pagina: meer over mij"
               }
-              url={"https://dzmedia.nl/"}
-              imgSrc={dzmedia}
+              url={"https://github.com/deinca/Portfolio-2023"}
+              imgSrc={portfolio}
             />
 
             <ProjectBlock
               name={"iCu matching App"}
-              tags={"NODE.js - HTML - CSS - PUG - MongoDB"}
+              tags={"NODE.js - PUG(HTML) - CSS - JavaScript - MongoDB"}
               description={
                 "Binnen mijn opleiding ben ik bezig geweest met het maken van een NODE.js web applicatie. Deze applicatie is gebouwd met de framework Express en wordt ondersteund met EJS 6. Binnen dit project heb ik gewerkt aan een feature waar je een account kan aanmaken, verwijderen en aanpassen. Tot slot is de website gecompileerd met PUG, dit is een template engine waar je HTML en JS samen in een document kan gebruiken waardoor de code via de back-end vertaald wordt naar de client-side als normaal HTML-5."
               }
               url={"https://icu-app.onrender.com/"}
               imgSrc={icuApp}
             />
-          </div>
-        </div>
 
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
             <ProjectBlock
-              name={"DJ LatingoBoy"}
-              tags={"WordPress - HTML - CSS - PHP"}
+              name={"Animal Disco"}
+              tags={"CSS 3 (HTML & JavaScript)"}
+              description={
+                "Tijdens mijn HBO ben ik 1 week bezig geweest om een sprint te maken met de nieuwste CSS tricks. Hiervoor moest ik een JPG/PNG afbeelding nabouwen in CSS-3. Dit project bevatte zelf gemaakte animaties en waarmee ik met JavaScript bepaalde functies mogelijk heb gemaakt zoals: het activeren en deactiveren van de animatie, muziek en verschillende lichten."
+              }
+              url={"https://deinca.github.io/disco-animal/"}
+              imgSrc={animalDisco}
+            />
+
+            <ProjectBlock
+              name={"Lengers Yachts"}
+              tags={"WordPress - ACF - PHP - HTML - SCSS - Bootstrap"}
               description={
                 "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. "
               }
-              url={"https://www.latingoboy.com/"}
-              imgSrc={latingoboy}
+              url={"https://careers.lengersyachts.com/"}
+              imgSrc={lyImg}
             />
 
             <ProjectBlock
-              name={"Delta D"}
-              tags={"WordPress - UX/UI - HTML - CSS"}
+              name={"Mercury"}
+              tags={"WordPress - ACF - PHP - HTML - SCSS - Bootstrap - GSAP.js"}
               description={
-                "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress."
+                "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. "
               }
-              url={"https://deltad.nl/"}
-              imgSrc={deltad}
+              url={"https://www.mercuryyachtconstruction.nl/"}
+              imgSrc={merImg}
             />
-          </div>
-        </div>
 
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
+            <ProjectBlock
+              name={"Game gallery"}
+              tags={"Vue - HTML - CSS - JavaScript - API"}
+              description={
+                "Voor dit (klein) project heb ik gebruik gemaakt van de Vue JavaScript-library om data van de RAWG API voor games weer te geven."
+              }
+              url={
+                "https://github.com/deinca/vue-gpg-app/blob/main/src/App.vue"
+              }
+              imgSrc={vueGames}
+            />
+
+            <ProjectBlock
+              name={"Showcase"}
+              tags={"Vue - NUXT - Bootstrap - HTML - CSS - JavaScript"}
+              description={
+                "Tijdens mijn HBO-opleiding heb ik een showcase kunnen maken in Vue JavaScript. Hierin kon ik mijn opdrachten presenteren die ik tijdens mijn stageperiode heb uitgevoerd."
+              }
+              url={"https://github.com/deinca/Internship-22-showcase"}
+              imgSrc={showCase}
+            />
+
             <ProjectBlock
               name={"Music Player"}
               tags={"HTML - CSS - JavaScript"}
@@ -108,14 +136,10 @@ function FrontEndProjectsPage() {
               url={"http://wowair.dzmedia.nl/"}
               imgSrc={wowAir}
             />
-          </div>
-        </div>
 
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
             <ProjectBlock
               name={"Van Leyen pallets"}
-              tags={"WordPress - UX/UI - HTML - CSS - Jquery"}
+              tags={"WordPress - ACF - HTML - CSS - Jquery"}
               description={
                 "Tijdens mijn eerste stage op het HBO heb ik de opdracht gekregen om een website te bouwen voor een klant in Almere. Deze website is met library ACF WordPress plugin gebouwd. Met Advanced Custom Fields moest ik ook met PHP werken. Dit is te vergelijken met een template engine waar je bepaalde functionaliteiten en layouts zelf kan programmeren binnen een WordPress website."
               }
@@ -123,55 +147,6 @@ function FrontEndProjectsPage() {
               imgSrc={vanLeyen}
             />
 
-            <ProjectBlock
-              name={"Animal Disco"}
-              tags={"CSS"}
-              description={
-                "Tijdens mijn HBO ben ik 1 week bezig geweest om een sprint te maken met de nieuwste CSS tricks. Hiervoor moest ik een JPG/PNG afbeelding nabouwen in CSS-3. Dit project bevatte zelf gemaakte animaties en waarmee ik met JavaScript bepaalde functies mogelijk heb gemaakt zoals: het activeren en deactiveren van de animatie, muziek en verschillende lichten."
-              }
-              url={"https://deinca.github.io/disco-animal/"}
-              imgSrc={animalDisco}
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
-            <ProjectBlock
-              name={"Game gallery"}
-              tags={"Vue - HTML - CSS - JavaScript - API"}
-              description={
-                "Voor dit (klein) project heb ik gebruik gemaakt van de Vue JavaScript-library om data van de RAWG API voor games weer te geven."
-              }
-              url={
-                "https://github.com/deinca/vue-gpg-app/blob/main/src/App.vue"
-              }
-              imgSrc={vueGames}
-            />
-
-            <ProjectBlock
-              name={"Showcase"}
-              tags={"Vue - NUXT - Bootstrap - CSS - JavaScript"}
-              description={
-                "Tijdens mijn HBO-opleiding heb ik een showcase kunnen maken in Vue JavaScript. Hierin kon ik mijn opdrachten presenteren die ik tijdens mijn stageperiode heb uitgevoerd."
-              }
-              url={"https://github.com/deinca/Internship-22-showcase"}
-              imgSrc={showCase}
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-center center to-top">
-          <div className="wrap flex flex-space-between">
-            <ProjectBlock
-              name={"Portfolio 2023"}
-              tags={"React - HTML - CSS - JavaScript - Vite - API's - GSAP"}
-              description={
-                "Voor dit (klein) project heb ik gebruik gemaakt van de React JavaScript-library en twee databases API voor om de cover van boeken (google API) en films (OMDb API) weer te geven in mijn portfolio."
-              }
-              url={"https://github.com/deinca/Portfolio-2023"}
-              imgSrc={portfolio}
-            />
           </div>
         </div>
       </section>

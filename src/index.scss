@@ -473,6 +473,12 @@ section {
   line-height: 3.5rem;
 }
 
+.mid-text {
+    font-size: 1.65rem;
+    line-height: 3.3rem;
+    margin-bottom: 3.5rem;
+}
+
 .sub-big-text {
   font-size: 1.5rem;
 }
@@ -676,7 +682,7 @@ p a {
   background-color: var(--color-soft-dark-blue);
   box-shadow: 0 0px 10px 0px var(--color-soft-light-blue);
   padding: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: lighter;
   border-radius: 1rem;
   overflow-wrap: break-word;
@@ -691,7 +697,7 @@ p a {
   background-color: var(--color-soft-dark-blue);
   box-shadow: 0 0px 10px 0px var(--color-soft-light-blue);
   padding: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: lighter;
   border-radius: 1rem;
   overflow-wrap: break-word;
@@ -1109,10 +1115,11 @@ footer {
     text-align: start;
   }
 
-  .big-text {
+  .big-text, .mid-text {
     font-size: 1.3rem;
     line-height: 2.7rem;
   }
+
   .card-block {
     width: 90%;
     margin: 2rem 0 0 0;
