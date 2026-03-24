@@ -11,11 +11,7 @@ function ProjectBlock({ name, tags, description, imgSrc, url }) {
             Bekijken
           </a>
         </div>
-        <img
-          className="width-100-pro"
-          src={imgSrc}
-          alt="Project image"
-        />
+        <img className="width-100-pro" src={imgSrc} alt="Project image" />
       </article>
     </>
   );

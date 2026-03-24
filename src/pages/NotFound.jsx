@@ -32,6 +32,9 @@ function NotFound() {
               <Link to="/front-end-projecten">Front-end projecten</Link>
             </li>
             <li>
+              <Link to="/wordpress">Wordpress</Link>
+            </li>
+            <li>
               <Link to="/multimedia-projecten">Multimedia projecten</Link>
             </li>
             <li>
