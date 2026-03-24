@@ -216,10 +216,10 @@ function AboutMe() {
       <section className="big-section move-section">
         <div className="flex flex-col-center text-center">
           <h2 className="gradient-heading-yb width-50-pro show-element">
-            Favoriete films
+            Favoriete films en series
           </h2>
           <p className="big-text width-50-pro show-element">
-            Hieronder vind je een aantal films die ik heb gezien en die ik zeker
+            Hieronder vind je een aantal films en series die ik heb gezien en die ik zeker
             de moeite waard vind.
           </p>
           <div className="flex flex-center show-element">

@@ -33,16 +33,18 @@ function MultiMediaProjectsPage() {
             Multimedia projecten
           </h1>
           <p className="big-text width-50-pro text-center to-top">
-Hieronder vind je een selectie van multimedia-projecten die ik tijdens mijn MBO- en HBO-opleiding heb uitgewerkt.
+            Hieronder vind je een selectie van multimedia-projecten die ik
+            tijdens mijn MBO- en HBO-opleiding heb uitgewerkt.
           </p>
         </div>
 
         <div className="flex flex-center to-top">
           <div className="wrap flex flex-wrap flex-space-between">
-
             <ProjectBlock
               name={"The Game Changer"}
-              tags={"HBO propedeuse | UX/UI - Product development & management - 3D print"}
+              tags={
+                "HBO propedeuse | UX/UI - Product development & management - 3D print"
+              }
               description={
                 "Binnen dit project was ik verantwoordelijk voor een deel van het concept, het presenteren van het product en het coördineren van de samenwerking binnen het team. Samen met mijn klasgenoten hebben we een concept ontwikkeld dat kinderen op een speelse manier stimuleert om hun speeltijd beter te reguleren en zo slaapproblemen te helpen voorkomen. Daarnaast heb ik gewerkt aan het genereren van ideeën en de video-editing van het project. Met dit concept werden we genomineerd voor de Golden Dot Award voor beste product van 2018."
               }
@@ -52,13 +54,13 @@ Hieronder vind je een selectie van multimedia-projecten die ik tijdens mijn MBO-
 
             <ProjectBlock
               name={"SEIN Proptotype"}
-              tags={"HBO afstudeerproject | Figma - Prototyping - UX/UI - Miro - Adobe After Effects"}
+              tags={
+                "HBO afstudeerproject | Figma - Prototyping - UX/UI - Miro - Adobe After Effects"
+              }
               description={
                 "Voor mijn afstudeerproject heb ik een applicatieconcept ontwikkeld voor SEIN, actief binnen de zorgsector. De oplossing was bedoeld voor medewerkers en richtte zich op het op een laagdrempelige manier leren van werkgerelateerde theorieën. Binnen het platform stond gebruiksvriendelijkheid centraal en konden gebruikers via drag-and-drop interacties de theorie stap voor stap doorlopen. Daarnaast bood het concept ruimte voor tips en handvatten over hoe medewerkers beter konden omgaan met verwanten van zorgcliënten."
               }
-              url={
-                "https://cloud.protopie.io/p/3b84826d5e"
-              }
+              url={"https://cloud.protopie.io/p/3b84826d5e"}
               imgSrc={seinImg}
             />
 
@@ -100,23 +102,24 @@ Hieronder vind je een selectie van multimedia-projecten die ik tijdens mijn MBO-
               description={
                 "Tijdens mijn HBO-opleiding heb ik de ANWB Onderweg-app geanalyseerd op het gebied van gebruiksvriendelijkheid, user interface en informatiearchitectuur. Binnen dit project heb ik onderzocht waar verbeterkansen lagen en welke oplossingen de gebruikerservaring konden versterken. Voor het uitwerken van de analyse en presentatie heb ik gebruikgemaakt van verschillende Adobe-programma’s, waaronder InDesign, Illustrator en Photoshop."
               }
-              url={"../src/assets/files/anwb-deiver.pdf"}
+              url={"/files/anwb-deiver.pdf"}
               imgSrc={anwbMuImg}
             />
-
           </div>
         </div>
       </section>
       <div className="section-separetor"></div>
 
-       <section className="padding-4rem-tb move-section">
+      <section className="padding-4rem-tb move-section">
         <div className="flex flex-col-center text-center">
           <h2 className="gradient-heading-yb width-50-pro show-element">
             Samenwerken?
           </h2>
           <p className="big-text width-50-pro show-element">
-Op dit moment ben ik op zoek naar een bedrijf waar creativiteit en development samenkomen. Denk je dat wij goed zouden kunnen samenwerken? Dan kun je mij <a href="tel:0611838539">bellen</a>{" "}
-            of een <a href="mailto:deiverzc@gmail.com">e-mail</a> sturen.
+            Op dit moment ben ik op zoek naar een bedrijf waar creativiteit en
+            development samenkomen. Denk je dat wij goed zouden kunnen
+            samenwerken? Dan kun je mij <a href="tel:0611838539">bellen</a> of
+            een <a href="mailto:deiverzc@gmail.com">e-mail</a> sturen.
           </p>
         </div>
       </section>
@@ -128,9 +131,12 @@ Op dit moment ben ik op zoek naar een bedrijf waar creativiteit en development s
       >
         <div className="flex wrap flex-space-between">
           <div className="width-45-pro">
-            <h2 className="gradient-heading-yb show-element">In contact blijven?</h2>
+            <h2 className="gradient-heading-yb show-element">
+              In contact blijven?
+            </h2>
             <p className="big-text show-element">
-Wil je in contact blijven? Via onderstaande social media kun je mij volgen. Voor direct contact kun je ook het formulier invullen.
+              Wil je in contact blijven? Via onderstaande social media kun je
+              mij volgen. Voor direct contact kun je ook het formulier invullen.
             </p>
             <div className="width-25-pro flex flex-space-between sm-buttons">
               <a
