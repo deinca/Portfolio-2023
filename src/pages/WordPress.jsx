@@ -20,7 +20,6 @@ import mrxImg from "../assets/images/marnix.jpg";
 import hdiImg from "../assets/images/hdi.jpg";
 import lbsImg from "../assets/images/lbshop.jpg";
 
-
 //Animations
 import animations from "../animation-functions";
 
@@ -36,8 +35,10 @@ function WordPressPage() {
             WordPress Development
           </h1>
           <p className="big-text width-70-pro text-center to-top">
-            Hieronder vind je de projecten die gemaakt zijn binnen wordpress
-            voornamelijk met de builder Elementor Pro. In alle projecten ben ik verantwoordelijk geweest van het bouwen en online plaatsen van de de websites.
+            Op deze pagina vindt u een selectie van WordPress-projecten die ik
+            heb gebouwd met WordPress en Elementor Pro. Daarbij heb ik gelet op
+            responsive design, gebruiksvriendelijkheid, UX/UI en
+            toegankelijkheid (WCAG).
           </p>
         </div>
 
@@ -46,10 +47,10 @@ function WordPressPage() {
             <ProjectBlock
               name={"Luminext"}
               tags={
-                "Elementor - Adobe XD - WPML integratie 3 talen - Dynamic CPT - Illustrator"
+                "Elementor - Adobe XD - WPML integratie 3 talen - Dynamic CPT - Illustrator - UX/UI"
               }
               description={
-                "Binnen mijn HBO opleiding heb ik de minor Applied Game Development gevolgd waarvoor ik een game moest maken. Het spel is gebouwd met de programmeertaal C# en ontworpen met de Unity Engine."
+                "Voor Luminext ben ik van begin tot lancering betrokken geweest bij het project. Met Adobe XD heb ik wireframes en de vormgeving uitgewerkt, waarna ik de website in WordPress met Elementor heb gebouwd. Daarnaast heb ik custom post types ingezet om pagina’s dynamisch op te bouwen en WPML gebruikt om de website meertalig te maken."
               }
               url={"https://www.luminext.com/"}
               imgSrc={lumiImg}
@@ -57,11 +58,9 @@ function WordPressPage() {
 
             <ProjectBlock
               name={"Sovjet Ereveld"}
-              tags={
-                "Elementor - Figma - ACF - Dynamic CPT"
-              }
+              tags={"Elementor - Figma - ACF - Dynamic CPT"}
               description={
-                "Tijdens mijn HBO-periode heb ik binnen het vak UBICOMP gewerkt aan een opdracht waarbij ik een product moest maken dat gekoppeld moest zijn aan het internet (IoT). Ik heb dit product ontwikkeld door gebruik te maken van een Arduino-bord. Hierin heb ik de Arduino-software gebruikt om de hardware, zoals sensoren, actuators en ledlampen, met elkaar te laten werken. De oplossing van mijn product was om de gebruiker te helpen zijn/haar sleutels van huis op een vaste plek te houden, zodat ze niet kwijt kunnen raken of vergeten worden."
+                "Voor Sovjet Ereveld was ik verantwoordelijk voor de bouw van de website en de technische uitwerking van het ontwerp in Figma. Binnen dit project heb ik gewerkt met ACF, custom post types en WPML om dynamische en vertaalbare pagina’s op te zetten. Daarnaast heb ik de website zo toegankelijk mogelijk gemaakt en aangevuld met animaties voor een speelsere gebruikerservaring."
               }
               url={"https://sovjet-ereveld.nl/"}
               imgSrc={seImg}
@@ -71,7 +70,7 @@ function WordPressPage() {
               name={"Kinderhospice"}
               tags={"Elementor - Ultimate Member - Dynamic CPT"}
               description={
-                "Gedurende mijn stage in het MBO voor mijn twee certificaten als Interactieve en Graphic Designer heb ik als eindopdracht gekregen om de Brand iClicks toe te passen in printproducten zoals: posters briefpapier, CMS-handleiding, offerte-papier en visitekaartjes. Daarnaast had ik een website ontworpen in Photoshop."
+                "Voor Kinderhospice ben ik van begin tot lancering betrokken geweest bij het project. Ik heb Adobe XD gebruikt voor het designproces en de website vervolgens opgebouwd met dynamische custom post types. De website fungeert als informatief platform voor een stichting, aangevuld met een afgeschermd ledengedeelte voor specifieke gebruikers. Na livegang heb ik hiervoor Ultimate Member geïntegreerd en verschillende headers opgezet per hoofdonderdeel van de website."
               }
               url={"https://www.kinderhospicebinnenveld.nl/"}
               imgSrc={khsImg}
@@ -79,9 +78,11 @@ function WordPressPage() {
 
             <ProjectBlock
               name={"Gezinshuis swappen"}
-              tags={"Elementor - Ultimate member - Dynamic CPT - Swiper JS - Adobe XD "}
+              tags={
+                "Elementor - Ultimate member - Dynamic CPT - Swiper JS - Adobe XD - SCSS"
+              }
               description={
-                "Voor het vak Visual Interactief Design heb ik een prototype-app gemaakt voor de OBA-bibliotheek in Amsterdam. De doelgroep van deze opdracht waren kinderen van 10 jaar tot en met 14 jaar. De gebruiker moest door middel van deze app zijn boek kunnen reserveren, zien of het boek geleend kon worden en of die beschadigd was. Deze prototype wordt voorzien van geïnnoveerde en interactieve schermen."
+                "Binnen dit project heb ik voornamelijk front-end werkzaamheden uitgevoerd. De website is opgebouwd met Elementor als basisstructuur, waarna ik met SCSS de technische uitwerking van het design heb verzorgd. Daarnaast heb ik Swiper.js gebruikt voor een carousel-animatie en Ultimate Member geïntegreerd voor de ledenfunctionaliteit."
               }
               url={"https://gezinshuisswappen.nl/"}
               imgSrc={ghsImg}
@@ -91,17 +92,17 @@ function WordPressPage() {
               name={"Spijkerman BV"}
               tags={"Elementor - Dynamic CPT - WPML - Adobe XD"}
               description={
-                "Voor mijn MBO opleiding heb ik regelmatig de opdracht gekregen om een huisstijl pakket te ontwerpen voor een bepaald bedrijf. Deze folder is een handleiding waarin je kan lezen over hoe je met de huisstijl moet omgaan binnen en buiten het bedrijf."
+                "Voor Spijkerman BV was ik verantwoordelijk voor de bouw van de website. Binnen dit project heb ik dynamische custom post types opgezet en WPML ingezet om de website meertalig te maken. Daarnaast heb ik in Adobe XD een kleine styleguide uitgewerkt voor het kleurgebruik en de typografie."
               }
-              url={"https://nomadnavigator.nl/"}
+              url={"https://spijkermanbv.nl/"}
               imgSrc={smImg}
             />
 
             <ProjectBlock
               name={"Remixes shop"}
-              tags={"Elementor - Dynamic CPT - Woocomerce - Figma"}
+              tags={"Elementor - Dynamic CPT - JetEngine - Woocomerce - Figma"}
               description={
-                "Voor mijn MBO opleiding heb ik regelmatig de opdracht gekregen om een huisstijl pakket te ontwerpen voor een bepaald bedrijf. Deze folder is een handleiding waarin je kan lezen over hoe je met de huisstijl moet omgaan binnen en buiten het bedrijf."
+                "Voor Remixes Shop ben ik van begin tot lancering betrokken geweest bij het project. Ik heb Figma gebruikt voor de vormgeving en de webshop opgebouwd in WordPress met WooCommerce. Daarnaast heb ik dynamische content en koppelingen toegepast, en met JetEngine functionaliteiten toegevoegd zoals filteren, sorteren en zoeken binnen de shop."
               }
               url={"https://remixes.latingoboy.com/"}
               imgSrc={lbsImg}
@@ -111,7 +112,7 @@ function WordPressPage() {
               name={"Marion v.d. Voort"}
               tags={"Elementor - Adobe XD - Dynamic CPT"}
               description={
-                "Tijdens mijn HBO afstudeerperiode ben ik bezig geweest met het maken van instructievideo's voor mijn eindproduct. Deze video's heb ik gemaakt met het Adobe-programma After Effects. Door op de link te klikken krijg je een voorbeeld te zien."
+                "Voor Marion v.d. Voort was ik verantwoordelijk voor de vormgeving van een onepage website, uitgewerkt in Adobe XD. Daarnaast heb ik dynamische custom post types opgezet, zodat de klant eenvoudig blogs kon beheren en publiceren."
               }
               url={"https://marionvandervoort.nl/"}
               imgSrc={mvImg}
@@ -121,7 +122,7 @@ function WordPressPage() {
               name={"UninU"}
               tags={"Elementor - Dynamic CPT"}
               description={
-                "Tijdens mijn HBO afstudeerperiode ben ik bezig geweest met het maken van instructievideo's voor mijn eindproduct. Deze video's heb ik gemaakt met het Adobe-programma After Effects. Door op de link te klikken krijg je een voorbeeld te zien."
+                "Voor UninU heb ik de bestaande website vernieuwd en geüpdatet op basis van de huisstijlkleuren van het merk. Het betreft een informatieve website waarin ik de nieuwsberichten dynamisch heb opgebouwd via een custom post type. Daarnaast heb ik verschillende formulieren aangemaakt om de functionaliteit van de website verder uit te breiden."
               }
               url={"https://uninu.nl/"}
               imgSrc={uniImg}
@@ -131,19 +132,19 @@ function WordPressPage() {
               name={"Nomad Navigator"}
               tags={"Elementor - Dynamic CPT and architecture - Figma"}
               description={
-                "Voor mijn MBO opleiding heb ik regelmatig de opdracht gekregen om een huisstijl pakket te ontwerpen voor een bepaald bedrijf. Deze folder is een handleiding waarin je kan lezen over hoe je met de huisstijl moet omgaan binnen en buiten het bedrijf."
+                "Voor Nomad Navigator was ik verantwoordelijk voor het vertalen van een Figma-ontwerp naar een dynamische website. Daarnaast heb ik de contentarchitectuur opgezet voor verschillende blogpagina’s, waarbij ik twee custom post types en bijbehorende taxonomieën heb ingericht om de content overzichtelijk te beheren."
               }
-              url={"https://spijkermanbv.nl/"}
+              url={"http://nomadnavigator.nl/"}
               imgSrc={nomadImg}
             />
 
             <ProjectBlock
               name={"Marnix"}
-              tags={"Elementor - Dynamic CPT"}
+              tags={"Elementor - Dynamic CPT - Adobe XD"}
               description={
-                "Tijdens mijn HBO afstudeerperiode ben ik bezig geweest met het maken van instructievideo's voor mijn eindproduct. Deze video's heb ik gemaakt met het Adobe-programma After Effects. Door op de link te klikken krijg je een voorbeeld te zien."
+                "Voor Marnix heb ik een thema van een derde partij nagebouwd en vertaald naar een werkende website. Ter voorbereiding heb ik Adobe XD gebruikt voor de vormgeving en schetsen. De website is opgezet als informatieve website met portfoliofunctie, aangevuld met custom post types zodat content zoals blogs eenvoudig beheerd en gepubliceerd kon worden."
               }
-              url={"https://uninu.nl/"}
+              url={"https://www.marnixscholmanurbanism.nl/"}
               imgSrc={mrxImg}
             />
 
@@ -151,12 +152,11 @@ function WordPressPage() {
               name={"Holland Diving"}
               tags={"Elementor - Adobe XD - Dynamic CPT"}
               description={
-                "Tijdens mijn HBO afstudeerperiode ben ik bezig geweest met het maken van instructievideo's voor mijn eindproduct. Deze video's heb ik gemaakt met het Adobe-programma After Effects. Door op de link te klikken krijg je een voorbeeld te zien."
+                "Voor Holland Diving was ik verantwoordelijk voor het vernieuwen van een informatieve B2B-website. Ik heb Adobe XD gebruikt om de indeling, layout en vormgeving op basis van de gewenste kleuren uit te werken. Daarnaast heb ik de website gebouwd en een Google Site Kit-integratie toegevoegd om bezoekersstatistieken inzichtelijk te maken."
               }
-              url={"https://marionvandervoort.nl/"}
+              url={"https://www.hollanddivingint.com/"}
               imgSrc={hdiImg}
             />
-            
           </div>
         </div>
       </section>
@@ -168,28 +168,29 @@ function WordPressPage() {
             Samenwerken?
           </h2>
           <p className="big-text width-50-pro show-element">
-            Dit komt goed uit. Op dit moment ben ik op zoek naar een bedrijf met
-            creatieve designers en geweldige developers. Als u denkt dat we
-            kunnen samenwerken, kunt u mij <a href="tel:0611838539">bellen</a>{" "}
-            of een <a href="mailto:deiverzc@gmail.com">e-mail</a> sturen.
+            Op dit moment ben ik op zoek naar een bedrijf waar creativiteit en
+            development samenkomen. Denk je dat wij goed zouden kunnen
+            samenwerken? Dan kun je mij <a href="tel:0611838539">bellen</a> of
+            een <a href="mailto:deiverzc@gmail.com">e-mail</a> sturen.
           </p>
         </div>
       </section>
       <div className="section-separetor"></div>
 
- <section
+      <section
         id="contact"
         className="contact-section flex flex-center  move-section"
       >
         <div className="flex wrap flex-space-between">
           <div className="width-45-pro">
-            <h2 className="gradient-heading-yb show-element">Netwerken?</h2>
+            <h2 className="gradient-heading-yb show-element">
+              In contact blijven?
+            </h2>
             <p className="big-text show-element">
-              Wij kunnen altijd elkaar digitaal ontmoeten door mij te volgen in
-              de onderstaande social media. Voor direct contact kunt u het
-              volgende fomulier invullen.
+              Wil je in contact blijven? Via onderstaande social media kun je
+              mij volgen. Voor direct contact kun je ook het formulier invullen.
             </p>
-            <div className="width-50-pro flex flex-space-between sm-buttons">
+            <div className="width-25-pro flex flex-space-between sm-buttons">
               <a
                 target="_blank"
                 className="circle-btn show-element"
@@ -205,14 +206,6 @@ function WordPressPage() {
               >
                 <img src={githubIcon} alt="" />
                 <span className="disapear">Github</span>
-              </a>
-              <a
-                target="_blank"
-                className="circle-btn show-element"
-                href="https://www.instagram.com/dzmedia.nl/"
-              >
-                <img src={insIcon} alt="Instragram icon" />
-                <span className="disapear">Instagram</span>
               </a>
             </div>
           </div>

@@ -9,9 +9,6 @@ import ProjectBlock from "../components/ProjectBlock";
 
 // Images
 import animalDisco from "../assets/images/animal-disco.png";
-import dzmedia from "../assets/images/dzmedia.png";
-import deltad from "../assets/images/deltad.png";
-import latingoboy from "../assets/images/latingoboy.png";
 import icuApp from "../assets/images/icu-app.png";
 import vanLeyen from "../assets/images/vanleyenpallets.png";
 import audioPlayer from "../assets/images/audio-player.png";
@@ -19,7 +16,6 @@ import wowAir from "../assets/images/wow-air.png";
 import showCase from "../assets/images/showcase-internship.png";
 import vueGames from "../assets/images/vue-games.png";
 import portfolio from "../assets/images/portfolio-2023.png";
-import ghsImg from "../assets/images/ghs.jpg";
 import lyImg from "../assets/images/ly.jpg";
 import merImg from "../assets/images/mercury.jpg";
 
@@ -38,8 +34,7 @@ function FrontEndProjectsPage() {
             Front-end projecten
           </h1>
           <p className="big-text width-70-pro text-center to-top">
-            Hieronder kun je mijn front-end projecten bekijken. Binnen deze projecten ben ik meer technisch geweest door de websites met custom code te bouwen of applicaties te bouwen met JavaScript framesworks.
-          </p>
+Hieronder kun je mijn front-end projecten bekijken. Binnen deze projecten lag de focus meer op de technische uitwerking, zoals het bouwen van websites met custom code en het ontwikkelen van applicaties met JavaScript frameworks.          </p>
         </div>
 
         <div className="flex flex-center to-top">
@@ -49,7 +44,7 @@ function FrontEndProjectsPage() {
               name={"Portfolio"}
               tags={"React framework - HTML - CSS - JavaScript - Vite - API's - GSAP- NPM"}
               description={
-                "Voor dit (klein) project heb ik gebruik gemaakt van de framework React. Daarnaast heb ik JavaScript-libraries en twee databases API's gebruikt voor om de covers van boeken (google API) en films (OMDb API) weer te geven in mijn portfolio. Dit ka nje zien in de pagina: meer over mij"
+                "Voor dit portfolio heb ik gewerkt met React en Vite. Daarnaast heb ik GSAP gebruikt voor animaties en npm voor het beheren van packages. Ook heb ik externe API’s ingezet om boekcovers via de Google Books API en filmgegevens via de OMDb API dynamisch weer te geven."
               }
               url={"https://github.com/deinca/Portfolio-2023"}
               imgSrc={portfolio}
@@ -59,7 +54,7 @@ function FrontEndProjectsPage() {
               name={"iCu matching App"}
               tags={"NODE.js - PUG(HTML) - CSS - JavaScript - MongoDB"}
               description={
-                "Binnen mijn opleiding ben ik bezig geweest met het maken van een NODE.js web applicatie. Deze applicatie is gebouwd met de framework Express en wordt ondersteund met EJS 6. Binnen dit project heb ik gewerkt aan een feature waar je een account kan aanmaken, verwijderen en aanpassen. Tot slot is de website gecompileerd met PUG, dit is een template engine waar je HTML en JS samen in een document kan gebruiken waardoor de code via de back-end vertaald wordt naar de client-side als normaal HTML-5."
+                "Tijdens mijn HBO heb ik in een sprint van één week een illustratie nagebouwd met CSS3. Binnen dit project heb ik gewerkt met animaties en JavaScript-functionaliteiten, zoals het activeren en deactiveren van animaties, muziek en verschillende flashing lights."
               }
               url={"https://icu-app.onrender.com/"}
               imgSrc={icuApp}
@@ -69,7 +64,7 @@ function FrontEndProjectsPage() {
               name={"Animal Disco"}
               tags={"CSS 3 (HTML & JavaScript)"}
               description={
-                "Tijdens mijn HBO ben ik 1 week bezig geweest om een sprint te maken met de nieuwste CSS tricks. Hiervoor moest ik een JPG/PNG afbeelding nabouwen in CSS-3. Dit project bevatte zelf gemaakte animaties en waarmee ik met JavaScript bepaalde functies mogelijk heb gemaakt zoals: het activeren en deactiveren van de animatie, muziek en verschillende lichten."
+                "Tijdens mijn HBO ben ik 1 week bezig geweest om een sprint te maken met de nieuwste CSS tricks. Hiervoor moest ik een JPG/PNG afbeelding nabouwen in CSS-3. Dit project heeft zelf gemaakte animaties en met JavaScript heb ik bepaalde functies mogelijk gemaakt zoals: het activeren en deactiveren van de animatie, muziek en verschillende lichten."
               }
               url={"https://deinca.github.io/disco-animal/"}
               imgSrc={animalDisco}
@@ -79,7 +74,7 @@ function FrontEndProjectsPage() {
               name={"Lengers Yachts"}
               tags={"WordPress - ACF - PHP - HTML - SCSS - Bootstrap"}
               description={
-                "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. "
+                "Voor Lengers Yachts was ik verantwoordelijk voor de front-end van een werken-bij platform in WordPress. Binnen dit project heb ik gewerkt met PHP en ACF om dynamische content op te bouwen zodat de klant de website eenvoudig kan bewerken. Voor de technische uitwerking van het design heb ik SCSS gebruikt, in combinatie met Bootstrap als grid framework."
               }
               url={"https://careers.lengersyachts.com/"}
               imgSrc={lyImg}
@@ -89,29 +84,27 @@ function FrontEndProjectsPage() {
               name={"Mercury"}
               tags={"WordPress - ACF - PHP - HTML - SCSS - Bootstrap - GSAP.js"}
               description={
-                "In 2022 heb ik een website vernieuwd door een nieuw ontwerp te maken in Figma om vervolgens deze website te bouwen in het CMS WordPress. "
+                "Voor Mercury Yacht Construction was ik verantwoordelijk voor de front-end van een werken-bij website in WordPress. Binnen dit project heb ik gewerkt met een custom template, ACF en PHP om dynamische content eenvoudig bewerkbaar te maken. Met SCSS en Bootstrap heb ik het ontwerp technisch doorgevoerd. En voor de animatie heb ik GSAP gerbuikt."
               }
               url={"https://www.mercuryyachtconstruction.nl/"}
               imgSrc={merImg}
             />
 
             <ProjectBlock
-              name={"Game gallery"}
-              tags={"Vue - HTML - CSS - JavaScript - API"}
+              name={"Van Leyen pallets"}
+              tags={"WordPress - ACF - HTML - CSS - Jquery"}
               description={
-                "Voor dit (klein) project heb ik gebruik gemaakt van de Vue JavaScript-library om data van de RAWG API voor games weer te geven."
+                "Tijdens mijn eerste stage op het HBO heb ik een website ontwikkeld voor een klant in Almere. Binnen dit project heb ik gewerkt met WordPress, ACF en PHP om content en lay-outs flexibel en dynamisch op te bouwen."
               }
-              url={
-                "https://github.com/deinca/vue-gpg-app/blob/main/src/App.vue"
-              }
-              imgSrc={vueGames}
+              url={"https://www.vanleyenpallets.nl/"}
+              imgSrc={vanLeyen}
             />
 
             <ProjectBlock
               name={"Showcase"}
               tags={"Vue - NUXT - Bootstrap - HTML - CSS - JavaScript"}
               description={
-                "Tijdens mijn HBO-opleiding heb ik een showcase kunnen maken in Vue JavaScript. Hierin kon ik mijn opdrachten presenteren die ik tijdens mijn stageperiode heb uitgevoerd."
+                "Tijdens mijn lange stage bij Valtech heb ik als front-end developer meegewerkt aan een groot internationaal project. Hierbij heb ik gewerkt met CSS, JavaScript, Vue.js, Bootstrap en Nuxt. Op basis van de vormgeving van het Wavin-project heb ik daarnaast een eigen mini showcase ontwikkeld."
               }
               url={"https://github.com/deinca/Internship-22-showcase"}
               imgSrc={showCase}
@@ -121,7 +114,7 @@ function FrontEndProjectsPage() {
               name={"Music Player"}
               tags={"HTML - CSS - JavaScript"}
               description={
-                "Naast het bouwen van een website in HTML en CSS heb ik ook de basis van JavaScript kunnen leren. In het vak “inleiding programmeren” kon ik zelf bedenken wat ik wilde maken. Mijn programma/ feature moest voldoen aan het volgen: function(s), array(s), variabelen, een loop, conditions zoals if - else of switch en events. Hiervoor heb ik een music player gemaakt met JavaScript en een beetje van JSon."
+                "Binnen het vak Inleiding Programmeren heb ik een music player ontwikkeld met JavaScript (HTML en CSS).  In dit project heb ik gewerkt met functies, arrays, variabelen, loops, condities en events. Daarnaast heb ik een klein deel van JSON toegepast binnen de functionaliteit van de speler."
               }
               url={"https://myplayer.dzmedia.nl/"}
               imgSrc={audioPlayer}
@@ -131,20 +124,22 @@ function FrontEndProjectsPage() {
               name={"WOW Air | Verhalen"}
               tags={"HTML - CSS - JavaScript"}
               description={
-                "In het tweede jaar moest ik een volledige website bouwen. Hierbij werd kritisch gekeken naar de vormgeving, front-end (HTML5 Syntax en CSS3 met slimme selectoren), responsieve design en het gebruik van Design Patterns."
+                "In het tweede jaar van mijn opleiding heb ik een volledige website ontwikkeld voor WOW Air | Verhalen. Binnen dit project lag de focus op vormgeving, HTML5-structuur, CSS3, responsive design en het toepassen van verschillende design patterns."
               }
               url={"http://wowair.dzmedia.nl/"}
               imgSrc={wowAir}
             />
 
             <ProjectBlock
-              name={"Van Leyen pallets"}
-              tags={"WordPress - ACF - HTML - CSS - Jquery"}
+              name={"Game gallery"}
+              tags={"Vue - HTML - CSS - JavaScript - API"}
               description={
-                "Tijdens mijn eerste stage op het HBO heb ik de opdracht gekregen om een website te bouwen voor een klant in Almere. Deze website is met library ACF WordPress plugin gebouwd. Met Advanced Custom Fields moest ik ook met PHP werken. Dit is te vergelijken met een template engine waar je bepaalde functionaliteiten en layouts zelf kan programmeren binnen een WordPress website."
+                "Binnen dit project heb ik gewerkt met Vue.js om een game API te koppelen en data dynamisch binnen het platform weer te geven. De website toont een overzicht van populaire games."
               }
-              url={"https://www.vanleyenpallets.nl/"}
-              imgSrc={vanLeyen}
+              url={
+                "https://github.com/deinca/vue-gpg-app/blob/main/src/App.vue"
+              }
+              imgSrc={vueGames}
             />
 
           </div>
@@ -158,9 +153,7 @@ function FrontEndProjectsPage() {
             Samenwerken?
           </h2>
           <p className="big-text width-50-pro show-element">
-            Dit komt goed uit. Op dit moment ben ik op zoek naar een bedrijf met
-            creatieve designers en geweldige developers. Als u denkt dat we
-            kunnen samenwerken, kunt u mij <a href="tel:0611838539">bellen</a>{" "}
+Op dit moment ben ik op zoek naar een bedrijf waar creativiteit en development samenkomen. Denk je dat wij goed zouden kunnen samenwerken? Dan kun je mij <a href="tel:0611838539">bellen</a>{" "}
             of een <a href="mailto:deiverzc@gmail.com">e-mail</a> sturen.
           </p>
         </div>
@@ -173,13 +166,11 @@ function FrontEndProjectsPage() {
       >
         <div className="flex wrap flex-space-between">
           <div className="width-45-pro">
-            <h2 className="gradient-heading-yb show-element">Netwerken?</h2>
+            <h2 className="gradient-heading-yb show-element">In contact blijven?</h2>
             <p className="big-text show-element">
-              Wij kunnen altijd elkaar digitaal ontmoeten door mij te volgen in
-              de onderstaande social media. Voor direct contact kunt u het
-              volgende fomulier invullen.
+Wil je in contact blijven? Via onderstaande social media kun je mij volgen. Voor direct contact kun je ook het formulier invullen.
             </p>
-            <div className="width-50-pro flex flex-space-between sm-buttons">
+            <div className="width-25-pro flex flex-space-between sm-buttons">
               <a
                 target="_blank"
                 className="circle-btn show-element"
@@ -195,14 +186,6 @@ function FrontEndProjectsPage() {
               >
                 <img src={githubIcon} alt="" />
                 <span className="disapear">Github</span>
-              </a>
-              <a
-                target="_blank"
-                className="circle-btn show-element"
-                href="https://www.instagram.com/dzmedia.nl/"
-              >
-                <img src={insIcon} alt="Instragram icon" />
-                <span className="disapear">Instagram</span>
               </a>
             </div>
           </div>
