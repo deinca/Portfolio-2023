@@ -17,4 +17,4 @@ YOURKEY WITHOUT SPACES
 `npm run dev`
 
 ## Build application
-`npm rund build`
+`npm run build`
